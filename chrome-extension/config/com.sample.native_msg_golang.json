@@ -1,0 +1,9 @@
+{
+    "name": "com.sample.native_msg_golang",
+    "description": "Chrome Native Messaging Host Go Example",
+    "path": "/Users/stan/dev/vplay/vplay_browser",
+    "type": "stdio",
+    "allowed_origins": [
+        "chrome-extension://ghbmnnjooekpmoecnnnilnnbdlolhkhi/"
+    ]
+}
