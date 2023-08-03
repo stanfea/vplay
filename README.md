@@ -2,17 +2,14 @@
 
 Vplay is designed to load videos into a video grid
 
-Built for viewing porn in mind
 
-## Porn Folder Player
+## Folder Player
 
 `vplay_folder <FOLDER>`
 
 will load all the videos into vplay wall
 
-<img width="640" alt="Screenshot 2023-02-23 at 7 30 17 PM" src="https://user-images.githubusercontent.com/1091037/220906454-e1ced0ad-de20-4918-a1ba-68266ff9c4bb.png">
-
-## Porn Videos from Browser
+## Videos from Browser
 
 Works best with pornhub
 
@@ -33,17 +30,5 @@ Works best with pornhub
 5. go to chrome-extension://ghbmnnjooekpmoecnnnilnnbdlolhkhi/main.html
 hit **Connect To Native Host**
 
-6. now browser pornhub videos they'll load up in vplay wall
+6. now browser streaming videos site they'll load up in vplay wall
 
-## Pornhub url load (WIP)
-
-Load all the videos from a pornhub category or playlist or model page
-
-Instead use these commands to download to a folder and then use `vplay_folder` for now
-
-```
-P='https://www.pornhub.org/pornstar/goldie-baby'
-
-yt-dlp --get-id $P | xargs -I {} -P 4 yt-dlp --downloader aria2c -N 10 --retry-sleep 1 -i --fixup never --force-ipv4 --no-check-certificate \
-'https://www.pornhub.org/view_video.php?viewkey={}'
-````
